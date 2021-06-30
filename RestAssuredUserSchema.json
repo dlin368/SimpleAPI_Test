@@ -1,0 +1,51 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+        "title": "User List",
+        "type": "object",
+        "items": {
+            "title": "User",
+            "type": "object",
+            "properties": {
+                "id":{
+                    "type":"number"
+                },
+                "name":{
+                    "type":"string"
+                },
+                "username":{
+                    "type":"string"
+                },
+                "email":{
+                    "type":"string"
+                },
+                "address":{
+                    "type":"object",
+                    "Properties":{
+                    	"street":{
+                    		"type": "string"
+                    		},
+                    	"suite":{
+                    		"type": "string"
+                    		},
+                    	"city":{
+                    		"type": "string"
+                    		},
+                    	"zipcode":{
+                    		"type": "string"
+                    		},
+                    },
+                },
+                "phone":{
+                    "type":"string"
+                },
+                "website":{
+                    "type":"string"
+                },
+                "company":{
+                    "type":"object"
+					
+                }
+            },
+            "required": ["id", "name", "username", "email", "address"]
+        }
+}
